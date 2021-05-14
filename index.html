@@ -1,0 +1,544 @@
+
+<!DOCTYPE html>
+
+
+
+
+<html>
+
+
+<head>
+
+
+   <meta charset='utf-8'>
+
+
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+
+   <title>GeoAR.js demo</title>
+
+
+   <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
+
+
+   <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+
+
+   <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+
+   <script src="../../three.js/examples/vendor/three.js/examples/js/loaders/GLTFLoader.js"></script>
+
+
+   <script src="https://raw.githack.com/AR-js-org/AR.js/3.0.0/aframe/build/aframe-ar-nft.js">
+
+
+
+
+
+
+
+   <script>
+
+
+       THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
+
+
+   </script>
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+<body style='margin: 0; overflow: hidden;'>
+
+
+   <div class="centered instructions"></div>
+
+
+   <a-scene
+
+
+       vr-mode-ui='enabled: false'
+
+
+       embedded
+
+
+       arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+
+
+   <a-camera gps-camera rotation-reader></a-camera>
+
+
+
+
+
+
+
+   <!-- north objects -->
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point1.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03665; longitude: 28.98702;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point2.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03734; longitude: 28.98621;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point3.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03739; longitude: 28.98416;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point4.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03759; longitude: 28.9852;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point5.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03698; longitude: 28.9841;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point6.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03711; longitude: 28.98493;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point7.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03634; longitude: 28.98477;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point8.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03671; longitude: 28.98375;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point9.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03606; longitude: 28.98339;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point10.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.0353; longitude: 28.98248;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point11.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03404; longitude: 28.98048;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point12.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03505; longitude: 28.98049;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point13.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03389; longitude: 28.97903;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point14.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03363; longitude: 28.97713;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point15.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.0389; longitude: 28.98811;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point16.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03888; longitude: 28.98605;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point17.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03854; longitude: 28.98639;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point18.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03828; longitude: 28.98689;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point19.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03859; longitude: 28.98759;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point20.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03786; longitude: 28.98642;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point21.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03813; longitude: 28.98585;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point22.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03795; longitude: 28.98716;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point23.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03819; longitude: 28.9878;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point24.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03749; longitude: 28.98765;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point25.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03935; longitude: 28.98671;"></a-image>
+
+
+
+
+
+
+
+   <a-image id="test" rotation="0 180 0" scale="3 3 3"
+
+
+   width="4" height="3" color="#ffffff" opacity="1" shader="flat" side="double" src="./assets/north/point26.jpg"
+
+
+   metalness="0.5" roughness="1" repeat="1 1" visible="true" gps-entity-place="latitude: 41.03889; longitude: 28.98688;"></a-image>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</a-scene>
+
+
+<div class="centered">
+
+
+   <button data-action="change"></button>
+
+
+</div>
+
+
+</body>
